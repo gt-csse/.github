@@ -5,6 +5,9 @@ on:
     - cron: '30 13 * * *' # run daily at 9:30 am EST
   workflow_dispatch: # enables manual trigger
 
+permissions:
+  actions: write
+  
 jobs:
   Run-OrgWarden:
     runs-on: ubuntu-latest
